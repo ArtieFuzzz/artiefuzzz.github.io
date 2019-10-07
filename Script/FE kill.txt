@@ -1,0 +1,11 @@
+ tool.Grip = CFrame.new(Vector3.new(0, 0, 0))
+    LocalPlayer.Character:FindFirstChild(torsoname).Anchored = false
+    repeat
+        LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = target.Character:FindFirstChild("HumanoidRootPart").CFrame
+        wait()
+    until target.Character == nil 
+LocalPlayer.Character:FindFirstChild("Humanoid"):UnequipTools()
+    hathandle.Parent = hat
+    hathandle.Massless = false
+    tool:Destroy()
+end
