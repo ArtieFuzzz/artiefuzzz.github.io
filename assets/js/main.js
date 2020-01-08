@@ -27,8 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var d = Math.floor(h / 24);
   var y = Math.floor(d / 365);
 
-  document.getElementById("years-of-coding").innerText = y + " years";
-
   if (getParameterByName('old')) {
     document.querySelector('head').innerHTML += '<link href="assets/css/classic.css" type="text/css" rel="stylesheet">';
   }
