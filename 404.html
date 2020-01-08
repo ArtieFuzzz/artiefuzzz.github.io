@@ -1,54 +1,35 @@
-<!DOCTYPE HTML>
-<!--
-Copyright Impact Studios 2020
--->
 <html>
-	<head>
-		<title>Impact Studios</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="assets/css/all.css" rel="stylesheet"> <!--load all styles -->
-		<!-- Favicon -->
-		<link rel='icon' href='images/favicon.ico' type='image/x-icon'/ > 
-	</head>
-	<body>
+  <head>
+    <title>404: Page not found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link href="assets/css/modesta.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 
-	<!-- Social & Open Graph -->
-	<meta property="og:title" content="Impact Studios" />
-	<meta property="og:description" content="This is Impact, a responsive exploit designed by Void & Trollicus." />
-	<meta property="og:image" content="https://raw.githubusercontent.com/Impact-Project/Impact-Project.github.io/master/images/avatar.png"> <!-- include your hosted image full URL -->
-	<meta property="og:url" content="https://impact-project.github.io" />
-	<meta name="twitter:title" content="Impact Studios" >
-	<meta name="twitter:description" content="This is Impact, a responsive exploit designed by Void & Trollicus." />
-	<meta name="twitter:image" content="https://raw.githubusercontent.com/Impact-Project/Impact-Project.github.io/master/images/avatar.png" /> <!-- include your hosted image full URL -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:creator" content="@Maurice_va" />
+    <!-- Custom CSS -->
+    <style>
+      .cursor { animation: 1s blink step-end infinite; font-weight: bolder; }
+      @keyframes blink {
+        from, to { opacity: 0; }
+        50% { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body class="monospace">
+    <section class="fullscreen">
+      <div class="background" style="background-image: url('assets/images/background.jpg');"></div>
+      <div class="center-object center-text">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<span class="avatar"><img src="images/avatar.png" alt="" /></span>
-						<h1>ERROR: <strong>404</strong></h1>
-						<ul class="icons">
-							<li><a href="https://impact-project.github.io" class="icon style2 fas fa-home"><span class="label">Home</span></a></li>
-						</ul>
-					</header>
-
-			<!--Footer-->
-					<footer id="footer">
-						<p>&copy;2020 Impact Studios.</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <h1 class="bold no-margin">
+          <span class="alizarin-text">404</span>
+            <br>
+          Page not found<span class="cursor">_</span>
+        </h1>
+        <div class="buttons">
+          <a href="/" class="btn alizarin-dropshadow animation hover">Back to home</a>
+          <a href="#" class="btn emerald-dropshadow animation hover" onclick="window.history.go(-1); return false;">Go one step back</a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
